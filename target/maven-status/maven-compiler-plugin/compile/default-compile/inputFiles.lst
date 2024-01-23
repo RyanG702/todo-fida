@@ -1,8 +1,0 @@
-/Users/ryangrillo/repos/todo-list/src/main/java/com/ryangrillo/fida/todolist/Application.java
-/Users/ryangrillo/repos/todo-list/src/main/java/com/ryangrillo/fida/todolist/controller/TodoController.java
-/Users/ryangrillo/repos/todo-list/src/main/java/com/ryangrillo/fida/todolist/entity/TodoEntity.java
-/Users/ryangrillo/repos/todo-list/src/main/java/com/ryangrillo/fida/todolist/exception/TodoNotFoundException.java
-/Users/ryangrillo/repos/todo-list/src/main/java/com/ryangrillo/fida/todolist/model/Todo.java
-/Users/ryangrillo/repos/todo-list/src/main/java/com/ryangrillo/fida/todolist/repository/TodoRepository.java
-/Users/ryangrillo/repos/todo-list/src/main/java/com/ryangrillo/fida/todolist/service/TodoService.java
-/Users/ryangrillo/repos/todo-list/src/main/java/com/ryangrillo/fida/todolist/utils/DateUtils.java
