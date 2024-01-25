@@ -22,7 +22,11 @@ public class TodoController {
     private static final Logger logger = LoggerFactory.getLogger(TodoController.class);
 
     @Autowired
-    private TodoService todoService;
+    private final TodoService todoService;
+
+    public TodoController(TodoService todoService) {
+        this.todoService = todoService;
+    }
 
     @PostMapping(path = TODOS_ENDPOINT)
     public List<String> addTodos(@RequestBody List<String> todos) {

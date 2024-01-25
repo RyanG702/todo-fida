@@ -11,7 +11,8 @@ import org.hibernate.Hibernate;
 import java.time.Instant;
 import java.util.Objects;
 
-@Data
+@Getter
+@Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
