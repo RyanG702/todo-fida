@@ -1,10 +1,12 @@
+FROM maven:3.9.6-eclipse-temurin-17 AS build
+WORKDIR /home/app
+COPY . /home/app
+RUN mvn -f /home/app/pom.xml clean package
+
+
+
 # Start your image with a Java base image
 FROM openjdk:17
-
-ARG JAR_FILE=target/*.jar
-
-# Copy the app package file
-COPY ./target/todo-list-0.0.1-SNAPSHOT.jar app.jar
-
-# Start the app using serve command
-CMD [ "java", "-jar", "app.jar" ]
+COPY --from=build /home/app/target/*.jar app.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "/app.jar"]
