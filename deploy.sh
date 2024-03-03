@@ -12,10 +12,6 @@ kill_process_on_port() {
 
 kill_process_on_port 8080
 
-./mvnw clean install
+docker build -t todolist:v1 .
 
-./mvnw test
-
-chmod +x ./mvnw
-
-./mvnw spring-boot:run
+docker run -d -p 8080:8080 --name todolist_container todolist:v1
